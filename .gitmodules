@@ -1,0 +1,3 @@
+[submodule "audacious"]
+	path = audacious
+	url = https://github.com/audacious-media-player/audacious.git
