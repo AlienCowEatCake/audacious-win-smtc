@@ -6,7 +6,12 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_VISIBILITY_PRESET hidden)
 
-set(AUDACIOUS_ROOT_DIR "$ENV{ProgramFiles\(x86\)}\\Audacious" CACHE PATH "Path to Audacions binaries root directory")
+if(DEFINED ENV{AUDACIOUS_ROOT_DIR})
+    set(AUDACIOUS_ROOT_DIR_DEFAULT "$ENV{AUDACIOUS_ROOT_DIR}")
+else()
+    set(AUDACIOUS_ROOT_DIR_DEFAULT "$ENV{ProgramFiles\(x86\)}\\Audacious")
+endif()
+set(AUDACIOUS_ROOT_DIR "${AUDACIOUS_ROOT_DIR_DEFAULT}" CACHE PATH "Path to Audacions binaries root directory")
 
 set(AUDCORE_DLL_NAME)
 foreach(AUDCORE_DLL_NAME_TEST "audcore" "audcore5")
