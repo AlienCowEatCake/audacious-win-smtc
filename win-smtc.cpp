@@ -116,7 +116,7 @@ public:
     bool init() Q_DECL_OVERRIDE
     {
         smtc_init();
-        if(aud_drct_get_ready())
+        if (aud_drct_get_ready())
             on_playback_ready();
         return true;
     }
