@@ -11,8 +11,12 @@ if [ "${MSYSTEM}" == "MINGW32" ] ; then
     MSYSTEM_PKG_PREFIX="${MSYSTEM_PKG_PREFIX}-i686"
     QT_MAJOR_VERSION="5"
 elif [ "${MSYSTEM}" == "MINGW64" ] ; then
-    # Audacious >= 4.4-beta1
+    # 4.4-beta1 <= Audacious <= 4.4
     MSYSTEM_PKG_PREFIX="${MSYSTEM_PKG_PREFIX}-x86_64"
+    QT_MAJOR_VERSION="6"
+elif [ "${MSYSTEM}" == "UCRT64" ] ; then
+    # Audacious >= 4.4.1
+    MSYSTEM_PKG_PREFIX="${MSYSTEM_PKG_PREFIX}-ucrt-x86_64"
     QT_MAJOR_VERSION="6"
 else
     echo "Unknown or broken MSYSTEM: ${MSYSTEM}"
