@@ -50,7 +50,7 @@ public:
         "Windows System Media Transport Controls (SMTC) Plugin for "
         "Audacious " PLUGIN_VERSION "\n"
         "https://github.com/AlienCowEatCake/audacious-win-smtc\n\n"
-        "Copyright (C) 2023-2024 Peter S. Zhigalov",
+        "Copyright (C) 2023-2025 Peter S. Zhigalov",
         Q_NULLPTR, PluginQtOnly};
 
     WinSMTC() : GeneralPlugin(info, true)

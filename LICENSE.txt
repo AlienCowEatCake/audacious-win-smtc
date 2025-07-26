@@ -1,6 +1,6 @@
 BSD 2-Clause License
 
-Copyright (c) 2023, Peter S. Zhigalov
+Copyright (c) 2023-2025, Peter S. Zhigalov
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:

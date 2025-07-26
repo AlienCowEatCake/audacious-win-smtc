@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.10)
 
 project(win-smtc-qt VERSION 0.5 LANGUAGES CXX)
 
