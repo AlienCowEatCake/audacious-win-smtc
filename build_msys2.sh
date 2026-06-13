@@ -24,6 +24,7 @@ else
 fi
 pacman -S --needed --noconfirm \
     base-devel \
+    git \
     ${MSYSTEM_PKG_PREFIX}-toolchain \
     ${MSYSTEM_PKG_PREFIX}-qt${QT_MAJOR_VERSION}-base \
     ${MSYSTEM_PKG_PREFIX}-cmake
